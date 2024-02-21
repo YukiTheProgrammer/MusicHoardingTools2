@@ -70,7 +70,7 @@ def UpdateWorkflow():
         print(f"'{taskToMove[4:]}' task has been updated")
     elif taskToMove[0] == "1":
         os.rename(taskToMove,"2"+taskToMove[1:])
-        print(f"'{taskToMove}' task has been updated")
+        print(f"'{taskToMove[4:]}' task has been updated")
 
 def WorkflowUI():
     while True:
