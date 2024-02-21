@@ -3,7 +3,7 @@
 A collection of Python programs to make the collection of offstreaming and leaked releases easier.
 
 ## Dependencies:
-
+- python 3.12
 ## Instalation Guide:
 
 ## Setup Guide:
