@@ -88,7 +88,7 @@ def MassAllArtistTracksSoundcloudDownloader(soundcloudUrls, path = r'E:\SoundClo
 
     print('List of artists tracks downloaded')
 #DOWNLOAD ALL PLAYLISTS FOR AN ARTIST
-def AllArtistPlaylistSoundcloudDownloader(artistUrl, path = r'E:\SoundCloud Downloads'):
+def AllArtistPlaylistsSoundcloudDownloader(artistUrl, path = r'E:\SoundCloud Downloads'):
     driver = MakeDriver()
     driver.get(artistUrl+"/sets")
     bottomReached = False
@@ -112,7 +112,7 @@ def AllArtistPlaylistSoundcloudDownloader(artistUrl, path = r'E:\SoundCloud Down
     print("All Playlists Downloaded For Aritst")
 
 def MassAllArtistPlaylistSoundcloudDownloader(soundcloudUrls, path = r'E:\SoundCloud Downloads'):
-    MultiThreader(AllArtistPlaylistSoundcloudDownloader,[soundcloudUrls,path])
+    MultiThreader(AllArtistPlaylistsSoundcloudDownloader,[soundcloudUrls,path])
     print('List of artists tracks downloaded')
 
     
@@ -155,7 +155,7 @@ def AllAritstSoundcloudDownloader(artistUrl, path = r'E:\SoundCloud Downloads'):
     path = path + "\\" + artistName
     os.mkdir(path)
     AllArtistAlbumsSoundloucdDownloader(artistUrl,path)
-    AllArtistPlaylistSoundcloudDownloader(artistUrl,path)
+    AllArtistPlaylistsSoundcloudDownloader(artistUrl,path)
     AllArtistTracksSoundcloudDownloader(artistUrl,path)
     RemoveDuplicates(path)
     print(f"Everything From {artistName} Downloaded")
