@@ -1,12 +1,8 @@
 import os
 
-"""
-Input: Artist Name, Directory Path
-Output: List Of Albums, List Of Loose Songs, List Of Leaks
-"""
-def GetAllDownloadedReleases(artistName,dirPath):      
+def GetAllDownloadedReleases(artistName,path = "E:\Music"):      
     result = {}
-    for root, dirs, files in os.walk(dirPath+"\\"+artistName):
+    for root, dirs, files in os.walk(path+"\\"+artistName):
         current_dir = result
         folders = root.split(os.path.sep)[3:]  # Remove the root folder
         for folder in folders:
@@ -25,4 +21,3 @@ def DisplayDownloadedReleases(dictOfDownloadedReleases,spacing = "  "):
             print(spacing + key)
             for x in dictOfDownloadedReleases[key]:
                 print(spacing + spacing + x)
-

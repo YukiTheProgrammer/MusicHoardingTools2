@@ -12,6 +12,21 @@ A collection of Python programs to make the collection of offstreaming and leake
 ## Documentation:
 ---
 ### A - Information Gathering Tools
+### A_GetAllDownloadedReleases.py
+#### GetAllDownloadedReleases(artistName,path)
+```
+artistName: name of artist whose folder to check
+path: path to directory where music is stroed (default: "E:\Music")
+
+Returns the folder structure of the artist as a dictionary
+```
+#### DisplayDownloadedReleases(dictOfDownloadedReleases,spacing)
+```
+dictOfDownloadedReleases: dictionary of the folder structure of an artist
+spacing: the spacing to use when printing nested folders and files
+
+Pretty Prints the folder structure dictionary
+```
 ---
 ### B - Downloading Tools
 
@@ -157,5 +172,5 @@ path
   |-song2.mp3
 ```
 ---
-###C - Organizing Folder Tools
+### C - Organizing Folder Tools
 ---
