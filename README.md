@@ -33,8 +33,9 @@ Pretty Prints the folder structure dictionary
 artistUrl: rym link for artist
 
 Returns a dictionary containing all the releases for an artist
----
+```
 
+---
 ### B - Downloading Tools
 
 ### B_DownloadFromSoundcloud.py
