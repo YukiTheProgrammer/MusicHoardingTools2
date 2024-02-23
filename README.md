@@ -4,6 +4,8 @@ A collection of Python programs to make the collection of offstreaming and leake
 
 ## Dependencies:
 - python 3.12
+- Selenium
+- BeautifulSoup
 ## Instalation Guide:
 
 ## Setup Guide:
