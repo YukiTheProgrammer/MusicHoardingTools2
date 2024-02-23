@@ -10,6 +10,10 @@ A collection of Python programs to make the collection of offstreaming and leake
 
 ## Usage Guide:
 ## Documentation:
+---
+###A - Information Gathering Tools
+---
+###B - Downloading Tools
 ### B_DownloadFromSoundcloud.py
 #### BaseSoundcloudDownloader(soundcloudUrl, path)
 ```
@@ -151,4 +155,6 @@ path
   |-song1.mp3
   |-song2.mp3
 ```
-
+---
+###C - Organizing Folder Tools
+---
