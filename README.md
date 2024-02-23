@@ -27,7 +27,14 @@ spacing: the spacing to use when printing nested folders and files
 
 Pretty Prints the folder structure dictionary
 ```
+### A_GetAllReleases.py
+#### GetAllReleases(artistUrl)
+```
+artistUrl: rym link for artist
+
+Returns a dictionary containing all the releases for an artist
 ---
+
 ### B - Downloading Tools
 
 ### B_DownloadFromSoundcloud.py

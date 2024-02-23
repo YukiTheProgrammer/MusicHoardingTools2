@@ -70,4 +70,5 @@ def GetAllReleases(artistUrl):
         if section:
             releases = section.find_all(class_="disco_release")
             for release in releases:    
-                discography[discographyKeys[i]].append(release.find(class_="disco_info").find("a").get('title')) 
+                discography[discographyKeys[i]].append(release.find(class_="disco_info").find("a").get('title'))
+    return(discography)
