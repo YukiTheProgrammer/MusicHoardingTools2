@@ -12,11 +12,20 @@ A collection of Python programs to make the collection of offstreaming and leake
 ## Documentation:
 ### B_DownloadFromSoundcloud.py
 #### BaseSoundcloudDownloader(soundcloudUrl, path)
-soundcloudUrl - url of track to download
-path - path to directory where to download to (default: "E:\Soundcloud Downloads")
+soundcloudUrl: url of track to download
+path: path to directory where to download to (default: "E:\Soundcloud Downloads")
 
-Downloads a track from soundcloud.
+Downloads a track from SoundCloud.
 
-- AlbumSoundcloudDownloader(albumUrl, path)
-albumUrl - url of album to download
-path - path to directory where to download to (default: "E:\Soundcloud Downloads")
+#### MassBaseSoundcloudDownloader(soundcloudUrls, path)
+soundcloudUrls: list of track urls to download
+path: path to directory where to download to (default: "E:\Soundcloud Downloads")
+
+Downloads a list of tracks from Soundcloud.
+
+#### AlbumSoundcloudDownloader(albumUrl, path)
+albumUrl: url of album to download
+path: path to directory where to download to (default: "E:\Soundcloud Downloads")
+
+Downloads an album from SoundCloud
+
