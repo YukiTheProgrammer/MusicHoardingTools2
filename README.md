@@ -19,12 +19,13 @@ path: path to directory where to download to (default: "E:\Soundcloud Downloads"
 Downloads a track from SoundCloud.
 
 #### MassBaseSoundcloudDownloader(soundcloudUrls, path)
+```
 soundcloudUrls: list of track urls to download
 
 path: path to directory where to download to (default: "E:\Soundcloud Downloads")
 
 Downloads a list of tracks from Soundcloud.
-
+```
 #### AlbumSoundcloudDownloader(albumUrl, path)
 albumUrl: url of album to download
 
